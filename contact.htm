@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <!-- end font -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>Contact Me</title>
     <script defer src="contact.js"></script>
   </head>
@@ -26,8 +26,8 @@
       </div>
       <nav>
         <a href="home.htm">
-            <button>Home</button>
-          </a>
+          <button>Home</button>
+        </a>
         <a href="about.htm">
           <button>About Me</button>
         </a>
@@ -38,7 +38,16 @@
     </header>
 
     <main>
-      
+      <h2>To contact me please fill out the form below</h2>
+      <form action="submitted.htm">
+        <label for="name">Name:</label>
+        <input type="text" name="name" />
+        <label for="email">Email:</label>
+        <input type="email" name="email" />
+        <label for="message">Your message:</label>
+        <input type="text" name="message">
+        <button>Submit</button>
+      </form>
     </main>
 
     <footer></footer>
