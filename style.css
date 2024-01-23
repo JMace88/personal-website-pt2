@@ -159,16 +159,12 @@ h2 {
   max-height: 7rem;
   text-align: center;
   font-size: xx-large;
-  /* padding-inline: 10rem; */
   margin: 0.75rem;
   grid-column: 1 / span 2;
   align-self: center;
   font-weight: bold;
 }
-/* article {
-  display: inline-block;
-  align-content: center;
-} */
+
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -264,4 +260,10 @@ li > img {
 .carousel > h2 {
   margin: auto;
   max-width: fit-content;
+}
+@media (width <= 650px) {
+  .card {
+    /* flex-direction: column; */
+  }
+
 }

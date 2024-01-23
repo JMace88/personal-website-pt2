@@ -17,6 +17,7 @@ body {
   background-position: center;
   color: #b4a5a5;
 }
+/* header styling starts here */
 header {
   border: 0.25rem solid #151515d8;
   border-bottom-left-radius: 0.75rem;
@@ -43,7 +44,6 @@ header > h1 {
   border: 1px solid #151515;
   text-decoration: none;
   margin-right: 9vw;
-  
 }
 .logo > a:link {
   text-decoration: none;
@@ -80,6 +80,7 @@ button a:link {
 button a:visited {
   color: #301b3f;
 }
+/* header styling ends here */
 main {
   margin-top: var(--headheight);
   width: 80%;
@@ -94,9 +95,6 @@ main > div > h1 {
   padding: 0.5rem;
   background-color: #301b3fd8;
   max-width: fit-content;
-  margin: auto;
-  /* bottom: 25rem;
-    left: 20vw; */
 }
 header > div > h2 {
   border-radius: 0.75rem;
@@ -112,68 +110,40 @@ header > div > h2 {
   font-weight: bold;
 }
 .card {
-    display: flex;
-    border: 0.025rem solid #301b3f;
-    border-radius: 0.75rem;
-    margin: 26vh;
-    padding: 1rem;
-    background-color: #3c415cad;
-  height: 49vh;
+  display: flex;
+  border: 0.025rem solid #301b3f;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background-color: #3c415cad;
   z-index: 0;
   place-items: center;
+  font-size: 8rem;
+  container-name: card;
+  overflow: auto;
 }
 .card > h1 {
-  /* border-radius: 0.75rem; */
-  /* background-color: #301b3fd8; */
   display: flex;
   text-align: center;
-  justify-content: center;
-  /* vertical-align: middle; */
   margin: 1rem;
-  height: 42vh;
-  /* min-width: fit-content; */
-  /* max-height: 7rem; */
-  /* align-self: center; */
-  /* font-size: 5rem; */
-  /* grid-column: 1 / span 2; */
-  /* font-weight: bold; */
 }
-
 .formbox {
-  
   background-color: #301b3fd8;
   border-radius: 0.75rem;
-  height: 42vh;
   margin: 1rem;
-  /* padding: 1rem; */
-  /* place-items: center; */
+  padding: 0.2em;
 }
-
 form {
   font-size: 2.2rem;
-  /* align-content: center; */
-  margin: 1rem;
 }
 input {
   border-radius: 0.75rem;
   height: 5vh;
 }
-
 textarea {
   height: 10vh;
-  width: 20vw;
+  width: 100%;
   border-radius: 0.75rem;
 }
-.card > img {
-  position: relative;
-  justify-content: center;
-  margin: 0rem;
-  max-height: 20vh;
-  border-radius: 0.75rem;
-  z-index: 0;
-  border: 0.025rem solid #301b3f;
-}
-
 footer {
   background-color: #301b3fd8;
   height: 1rem;
@@ -184,4 +154,10 @@ footer {
   border-bottom: none;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+@media (width <= 650px) {
+  .card {
+    flex-direction: column;
+  }
+
 }
