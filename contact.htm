@@ -38,16 +38,29 @@
     </header>
 
     <main>
-      <h2>To contact me please fill out the form below</h2>
-      <form action="submitted.htm">
-        <label for="name">Name:</label>
-        <input type="text" name="name" />
-        <label for="email">Email:</label>
-        <input type="email" name="email" />
-        <label for="message">Your message:</label>
-        <input type="text" name="message">
-        <button>Submit</button>
-      </form>
+      <div class="card">
+        <h1>To contact me please fill out this form.</h1>
+        
+        <div class="formbox">
+          <form action="submitted.htm">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" name="name" />
+            </div>
+            <br>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" />
+            </div>
+            <br>
+            <div>
+              <label for="message">Your message:</label>
+              <textarea name="message">Type your message here . . .</textarea>
+            </div>
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
