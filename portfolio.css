@@ -122,9 +122,21 @@
     place-items: center;
     align-items: stretch;
     grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
   }
   
   .card > a > img {
+    position: relative;
+    margin: 1rem;
+    /* max-height: 50%; */
+    max-width: 90%;
+    border-radius: 0.75rem;
+    z-index: 0;
+    border: 0.025rem solid #301b3f;
+    object-fit: center;
+    /* aspect-ratio: 1; */
+  }
+  .card > img {
     position: relative;
     margin: 1rem;
     /* max-height: 50%; */
@@ -155,7 +167,7 @@
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
   }
-  @media (width <= 700px) {
+  @media (aspect-ratio < 1) {
     .card {
       grid-template-columns: 1fr;
     }

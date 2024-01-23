@@ -110,7 +110,9 @@ header > div > h2 {
   font-weight: bold;
 }
 .card {
+  margin-top: 10rem;
   display: flex;
+  flex-direction: column;
   border: 0.025rem solid #301b3f;
   border-radius: 0.75rem;
   padding: 1rem;
@@ -155,9 +157,11 @@ footer {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
 }
-@media (width <= 650px) {
-  .card {
-    flex-direction: column;
+@media (width <500px) {
+  .card > h1 {
+    font-size: 3rem;
   }
-
+  .card {
+    margin-top: 6rem;
+  }
 }
