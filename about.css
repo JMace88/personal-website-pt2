@@ -43,7 +43,6 @@
     border-radius: 50%;
     border: 1px solid #151515;
     text-decoration: none;
-    /* margin-right: 9vw; */
   }
   .logo > a:link {
     text-decoration: none;
@@ -117,16 +116,15 @@
   
   .card {
     display: grid;
-    /* grid-template-columns: 1fr 2fr; */
     border: 0.025rem solid #301b3f;
     border-radius: 0.75rem;
     margin: 1rem;
     padding: 1rem;
     background-color: #3c415cad;
-    /* height: 21.5rem; */
     z-index: 0;
     place-items: center;
     align-items: stretch;
+    
   }
   .card > img {
     position: relative;
@@ -137,6 +135,7 @@
     z-index: 0;
     border: 0.025rem solid #301b3f;
     object-fit: cover;
+
   }
   p {
     font-size: 190%;
